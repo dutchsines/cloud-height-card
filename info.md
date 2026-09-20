@@ -21,7 +21,15 @@ Add the card to your dashboard YAML:
 ```yaml
 type: custom:cloud-height-card
 entity: sensor.estimated_cloud_base
-title: Cloud Elevation
+temp_entity: sensor.st_00176926_air_temperature
+dew_entity: sensor.st_00176926_dew_point
+title: LOCAL SKY CONDITIONS
 max_altitude: 10000
 hours_to_show: 24
-blend_colors: true
+progress_bar_order: 3
+sensors_order: 1
+analysis_order: 1
+show_celestial: true
+show_progress_bar: true
+show_sensors: true
+show_analysis: true
