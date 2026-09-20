@@ -72,31 +72,3 @@ Option B: Metric Units (°C)If your weather station outputs temperature and dew 
           {% else %}
             unavailable
           {% endif %}
-InstallationMethod 1: HACS (Recommended)Click the Open in HACS button at the top of this page, or open HACS in Home Assistant.Search for Cloud Height Card.Click Download.Method 2: Manual InstallationDownload cloud-height-card.js from the latest release.Copy cloud-height-card.js to your Home Assistant configuration directory under /config/www/cloud-height-card.js.In Home Assistant, go to Settings $\rightarrow$ Dashboards $\rightarrow$ Resources (top right three dots).Add a new resource:URL: /local/cloud-height-card.jsResource Type: JavaScript ModuleRefresh your browser (Ctrl + F5 / Cmd + Shift + R).Configuration ExampleYAMLtype: custom:cloud-height-card
-entity: sensor.estimated_cloud_base
-title: Local Sky Conditions
-max_altitude: 10000
-hours_to_show: 24
-card_height: 200px
-blend_colors: true
-
-# Font & Sizing Overrides
-title_font_size: 1.1rem
-axis_font_size: 0.75rem
-badge_font_size: 0.85rem
-cloud_size: 50px
-celestial_size: 1.8rem
-
-# Color Customizations
-ground_color: '#4ab561'
-arc_color: '#fde047'
-bg_gradient: 'linear-gradient(180deg, #0e1726 0%, #162238 100%)'
-
-# Altitude Color Thresholds
-color_0: '#8b0000'     # Fog / Ground level
-color_500: '#e63946'   # Very low ceiling
-color_1000: '#f4a261'  # Low altitude
-color_2500: '#e9c46a'  # Mid altitude
-color_5000: '#2a9d8f'  # High altitude
-color_8000: '#38bdf8'  # Very high ceiling
-Configuration OptionsParameterTypeDefaultDescriptionentityStringRequiredCloud height sensor entity IDtitleStringCloud ElevationCard header titlemax_altitudeNumber10000Y-axis ceiling limithours_to_showNumber24Hours of history to draw on graphcard_heightString200pxHeight of the chart viewport areablend_colorsBooleantruetrue for smooth gradients, false for hard threshold bandscloud_gifStringDefault GIFCustom image/GIF URL or /local/my_cloud.giftitle_font_sizeString1remHeader title font sizeaxis_font_sizeString0.7remX and Y axis labels font sizebadge_font_sizeString0.8remAltitude badge font sizecelestial_sizeString1.8remSun & Moon icon font sizeground_colorString#4ab561Ground bar colorarc_colorString#fde047Sun trajectory arch colorbg_gradientStringCSS GradientBackground gradient style
