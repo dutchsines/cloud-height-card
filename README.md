@@ -1,10 +1,6 @@
 # Cloud Height Card
-
+<a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=dutchsines&repository=cloud-height-card&category=Lovelace" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
 <p align="center">
-  <a href="https://my.home-assistant.io/redirect/hacs_repository/?repository=https%3A%2F%2Fgithub.com%2Fdutchsines%2Fcloud-height-card&category=Plugin">
-    <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open in HACS" />
-  </a>
-</p>
 
 <p align="center">
   <a href="https://hacs.xyz/"><img src="https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge" alt="HACS Custom"></a>
