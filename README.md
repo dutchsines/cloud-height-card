@@ -72,3 +72,28 @@ Option B: Metric Units (°C)If your weather station outputs temperature and dew 
           {% else %}
             unavailable
           {% endif %}
+```
+Card Example
+```yaml
+type: custom:cloud-height-card
+entity: sensor.estimated_cloud_base
+title: Local Sky Conditions
+max_altitude: 10000
+hours_to_show: 24
+card_height: 200px
+blend_colors: true
+title_font_size: 1.1rem
+axis_font_size: 0.75rem
+badge_font_size: 0.85rem
+cloud_size: 50px
+celestial_size: 1.8rem
+ground_color: '#4ab561'
+arc_color: '#fde047'
+bg_gradient: 'linear-gradient(180deg, #0e1726 0%, #162238 100%)'
+color_0: '#8b0000'
+color_500: '#e63946'
+color_1000: '#f4a261'
+color_2500: '#e9c46a'
+color_5000: '#2a9d8f'
+color_8000: '#38bdf8'
+
