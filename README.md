@@ -1,6 +1,12 @@
 # Cloud Height Card
 
 <p align="center">
+  <a href="https://my.home-assistant.io/redirect/hacs_repository/?repository=https%3A%2F%2Fgithub.com%2Fdutchsines%2Fcloud-height-card&category=Plugin">
+    <img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open in HACS" />
+  </a>
+</p>
+
+<p align="center">
   <a href="https://hacs.xyz/"><img src="https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge" alt="HACS Custom"></a>
   <a href="https://github.com/dutchsines/cloud-height-card/releases/latest"><img src="https://img.shields.io/github/v/release/dutchsines/cloud-height-card?style=for-the-badge&color=blue" alt="Latest Version"></a>
   <a href="https://github.com/dutchsines/cloud-height-card/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dutchsines/cloud-height-card?style=for-the-badge&color=green" alt="License"></a>
