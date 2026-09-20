@@ -41,6 +41,7 @@ A custom Lovelace card that visualizes real-time cloud elevation, altitude trend
 3. Add repository URL: `https://github.com/YOUR_GITHUB_USERNAME/cloud-height-card`
 4. Category: **Lovelace**
 5. Click **Add**, then find and install **Cloud Height Card**.
+
     <a href="https://my.home-assistant.io/redirect/hacs_repository/?owner=dutchsines&repository=cloud-height-card&category=Lovelace" target="_blank" rel="noreferrer noopener"><img src="https://my.home-assistant.io/badges/hacs_repository.svg" alt="Open your Home Assistant instance and open a repository inside the Home Assistant Community Store." /></a>
 <p align="center">
 ---
