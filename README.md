@@ -15,10 +15,6 @@
 
 A custom Lovelace card that visualizes real-time cloud elevation, altitude trends over time, and live sun/moon positions along a parabolic sky arch.
 
-<p align="center">
-  <img src="preview.png" alt="Cloud Height Card Preview" width="600px">
-</p>
-
 ## Features
 - **Dynamic Sky Visualization:** Renders an animated cloud graphic at the real-time altitude reported by your sensor.
 - **Historical Trendline:** Embeds an SVG graph showing altitude changes over a customizable time window (e.g., 24h).
