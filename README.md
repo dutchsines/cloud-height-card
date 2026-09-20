@@ -5,10 +5,10 @@
   <img src="https://img.shields.io/badge/Home%20Assistant-Lovelace-41BDF5.svg?style=for-the-badge&logo=home-assistant&logoColor=white" alt="Home Assistant Lovelace">
 </p>
 
-<p align="Left">
+<p align="left">
   <img src="preview.png" alt="Cloud Height Card Preview" width="600px">
 </p>
-<p align="Right">
+<p align="right">
   <img src="preview2.png" alt="Cloud Height Card Preview" width="600px">
 </p>
 # Cloud Height Card for Home Assistant
