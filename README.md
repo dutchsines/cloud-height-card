@@ -14,8 +14,8 @@
 </p>
 
 <p align="center">
-  <img src="preview.png" alt="Cloud Height Card Preview" width="48%">
-    <img src="preview2.png" alt="Cloud Height Card Preview" width="48%">
+  <img src="Preview.png" alt="Cloud Height Card Preview" width="48%">
+    <img src="Preview2.png" alt="Cloud Height Card Preview" width="48%">
 </p>
 
 A custom Lovelace card for Home Assistant that visualizes real-time cloud elevation, altitude trends over time, and live sun/moon positions along a parabolic sky arch.
