@@ -22,7 +22,50 @@ A custom Lovelace card that visualizes real-time cloud elevation, altitude trend
 - **Color Thresholds & Blending:** Smoothly transitions or hard-cuts graph colors based on cloud height (e.g., red for fog, yellow for low ceiling, blue for high elevation).
 - **Dashboard Customization:** Fully configurable via YAML or the built-in visual editor (font sizes, card height, ground colors, and cloud size).
 
----
+## ☁️ Creating an Estimated Cloud Base Sensor
+
+If you don't already have an entity providing cloud base elevation, you can easily create one in Home Assistant using a **Template Sensor**! The sensor uses the standard Spread Formula:
+
+$$\text{Cloud Base (ft)} = \left( \frac{\text{Temperature} - \text{Dew Point}}{4.4} \right) \times 1000$$
+
+Add one of the following snippets to your `configuration.yaml` (or `templates.yaml`) and replace the sample entity IDs with your local outdoor temperature and dew point sensors.
+
+### Option A: Imperial Units (°F)
+
+```yaml
+template:
+  - sensor:
+      - name: "Estimated Cloud Base"
+        unique_id: estimated_cloud_base_ft
+        unit_of_measurement: "ft"
+        icon: "mdi:cloud-outline"
+        state_class: measurement
+        state: >
+          {% set temp = states('sensor.your_temperature_sensor') | float(none) %}
+          {% set dew = states('sensor.your_dew_point_sensor') | float(none) %}
+          {% if temp is not none and dew is not none %}
+            {{ (((temp - dew) / 4.4) * 1000) | round(0) }}
+          {% else %}
+            unavailable
+          {% endif %}
+
+Metric Units (°C)
+If your weather station outputs temperature and dew point in Celsius, divide by 2.5 instead
+template:
+  - sensor:
+      - name: "Estimated Cloud Base"
+        unique_id: estimated_cloud_base_m
+        unit_of_measurement: "m"
+        icon: "mdi:cloud-outline"
+        state_class: measurement
+        state: >
+          {% set temp = states('sensor.your_temperature_sensor') | float(none) %}
+          {% set dew = states('sensor.your_dew_point_sensor') | float(none) %}
+          {% if temp is not none and dew is not none %}
+            {{ (((temp - dew) / 2.5) * 1000) | round(0) }}
+          {% else %}
+            unavailable
+          {% endif %}
 
 ## Installation
 
