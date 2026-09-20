@@ -84,4 +84,4 @@ color_8000: '#38bdf8'  # Very high ceiling
 | `arc_color` | String | `#fde047` | Sun trajectory arch color |
 | `bg_gradient` | String | CSS Gradient | Background gradient style |
 
-![Cloud Height Card Preview](https://raw.githubusercontent.com/dutchsines/cloud-height-card/main/preview.png)
+![Cloud Height Card Preview]([https://raw.githubusercontent.com/dutchsines/cloud-height-card/main/preview.png](https://github.com/dutchsines/cloud-height-card/blob/main/Screenshot%202026-09-20%20120430.png)
