@@ -28,7 +28,7 @@ A custom Lovelace card for Home Assistant that visualizes real-time cloud elevat
 - ☀️ **Celestial Tracking:** Tracks real-time Sun and Moon elevation along a parabolic arc complete with sunrise and sunset badges.
 - 🎨 **Color Thresholds & Blending:** Smoothly transitions or hard-cuts graph colors based on cloud height (e.g., red for fog, yellow for low ceiling, blue for high elevation).
 - ⚙️ **Dashboard Customization:** Fully configurable via YAML or the built-in visual editor (font sizes, card height, ground colors, and cloud size).
-
+- 📈 ** Grraph Autozoom can be adjusted to your liking or you can turn it off. V2.0.1
 ---
 
 ## ☁️ Creating an Estimated Cloud Base Sensor
