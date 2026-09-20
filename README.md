@@ -94,12 +94,3 @@ color_8000: '#38bdf8'  # Very high ceiling
 | `ground_color` | String | `#4ab561` | Ground bar color |
 | `arc_color` | String | `#fde047` | Sun trajectory arch color |
 | `bg_gradient` | String | CSS Gradient | Background gradient style |
-
-// AUTOMATIC CARD PICKER REGISTRATION FOR HOME ASSISTANT
-window.customCards = window.customCards || [];
-window.customCards.push({
-  type: "cloud-height-card",
-  name: "Cloud Height Card",
-  preview: true,
-  description: "Visualizes estimated cloud base elevation, 24h history graphs, and celestial sun/moon arc trajectories."
-});
