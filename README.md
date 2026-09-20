@@ -57,7 +57,9 @@ template:
           {% else %}
             unavailable
           {% endif %}
+```
 Option B: Metric Units (°C)If your weather station outputs temperature and dew point in Celsius, divide by 2.5 instead:YAMLtemplate:
+```yaml
   - sensor:
       - name: "Estimated Cloud Base"
         unique_id: estimated_cloud_base_m
