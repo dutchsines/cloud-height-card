@@ -13,11 +13,12 @@
   <img src="https://img.shields.io/badge/Home%20Assistant-Lovelace-41BDF5.svg?style=for-the-badge&logo=home-assistant&logoColor=white" alt="Home Assistant Lovelace">
 </p>
 
-<p align="center">
+<p align="left">
   <img src="preview.png" alt="Cloud Height Card Preview" width="48%">
+</p>
+<p align="right">
   <img src="preview2.png" alt="Cloud Height Card Preview 2" width="48%">
 </p>
-
 A custom Lovelace card for Home Assistant that visualizes real-time cloud elevation, altitude trends over time, and live sun/moon positions along a parabolic sky arch.
 
 ---
