@@ -2,7 +2,7 @@
 
 An animated, highly customizable Lovelace card for Home Assistant that visualizes estimated cloud base altitude, 24-hour altitude trend graphs, and live celestial movement (Sun & Moon) along a dynamic trajectory.
 
-![Cloud Height Card Preview](https://raw.githubusercontent.com/dutchsines/cloud-height-card/main/preview.png)
+![Cloud Height Card Preview]([https://raw.githubusercontent.com/dutchsines/cloud-height-card/main/preview.png](https://raw.githubusercontent.com/dutchsines/cloud-height-card/refs/heads/main/Screenshot%202026-09-20%20120430.png)
 
 ## Key Features
 
