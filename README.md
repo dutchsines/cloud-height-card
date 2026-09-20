@@ -1,3 +1,16 @@
+# Cloud Height Card
+
+<p align="center">
+  <a href="https://hacs.xyz/"><img src="https://img.shields.io/badge/HACS-Custom-orange.svg?style=for-the-badge" alt="HACS Custom"></a>
+  <a href="https://github.com/dutchsines/cloud-height-card/releases/latest"><img src="https://img.shields.io/github/v/release/dutchsines/cloud-height-card?style=for-the-badge&color=blue" alt="Latest Version"></a>
+  <a href="https://github.com/dutchsines/cloud-height-card/blob/main/LICENSE"><img src="https://img.shields.io/github/license/dutchsines/cloud-height-card?style=for-the-badge&color=green" alt="License"></a>
+  <img src="https://img.shields.io/badge/Home%20Assistant-Lovelace-41BDF5.svg?style=for-the-badge&logo=home-assistant&logoColor=white" alt="Home Assistant Lovelace">
+</p>
+
+<p align="center">
+  <img src="preview.png" alt="Cloud Height Card Preview" width="600px">
+</p>
+
 # Cloud Height Card for Home Assistant
 
 A custom Lovelace card that visualizes real-time cloud elevation, altitude trends over time, and live sun/moon positions along a parabolic sky arch.
