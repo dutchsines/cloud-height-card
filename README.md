@@ -15,7 +15,7 @@
 
 <p align="center">
   <img src="Preview.png" alt="Cloud Height Card Preview" width="48%">
-    <img src="Pannelview.png" alt="Cloud Height Card Preview" width="48%">
+  <img src="Pannelview.png" alt="Cloud Height Card Preview" width="48%">
 </p>
 
 A custom Lovelace card for Home Assistant that visualizes real-time cloud elevation, altitude trends over time, and live sun/moon positions along a parabolic sky arch.
@@ -24,11 +24,14 @@ A custom Lovelace card for Home Assistant that visualizes real-time cloud elevat
 
 ## Features
 - ☁️ **Dynamic Sky Visualization:** Renders an animated cloud graphic at the real-time altitude reported by your sensor.
-- 📈 **Historical Trendline:** Embeds an SVG graph showing altitude changes over a customizable time window (e.g., 24h).
-- ☀️ **Celestial Tracking:** Tracks real-time Sun and Moon elevation along a parabolic arc complete with sunrise and sunset badges.
+- 📈 **Historical Trendline:** Embeds an SVG graph showing altitude changes over a customizable time window (e.g., 24h) with intermediate time markers across the bottom axis.
+- 📏 **Responsive Layout & Dynamic Width:** The Y-axis automatically auto-fits its width based on text length to prevent any text or graph overlap, even when using dual height displays.
+- 📐 **Flexible Unit System:** Supports automatic Home Assistant native units, forced Imperial (`ft`, `°F`), Metric (`m`, `°C`), or Dual-Unit readouts (`ft (m)` / `°F (°C)`).
+- ☀️ **Celestial Tracking:** Tracks real-time Sun and Moon elevation along a parabolic arc with accurate moon phases, sunrise, sunset, moonrise, and moonset time badges.
 - 🎨 **Color Thresholds & Blending:** Smoothly transitions or hard-cuts graph colors based on cloud height (e.g., red for fog, yellow for low ceiling, blue for high elevation).
-- ⚙️ **Dashboard Customization:** Fully configurable via YAML or the built-in visual editor (font sizes, card height, ground colors, and cloud size).
-- 📈 Graph Autozoom can be adjusted to your liking or you can turn it off. V2.0.1.
+- 🔎 **Dynamic Dynamic Zoom / Auto-Scale:** Automatically scales the graph view ceiling based on historical peaks to eliminate dead space, or can be overridden to a fixed maximum.
+- ⚙️ **Dashboard Customization:** Fully configurable via YAML or the built-in visual editor (font sizes, card height, module layout ordering, ground colors, and cloud size).
+
 ---
 
 ## ☁️ Creating an Estimated Cloud Base Sensor
@@ -57,40 +60,3 @@ template:
           {% else %}
             unavailable
           {% endif %}
-```
-Option B: Metric Units (°C)If your weather station outputs temperature and dew point in Celsius, divide by 2.5 instead:YAMLtemplate:
-```yaml
-  - sensor:
-      - name: "Estimated Cloud Base"
-        unique_id: estimated_cloud_base_m
-        unit_of_measurement: "m"
-        icon: "mdi:cloud-outline"
-        state_class: measurement
-        state: >
-          {% set temp = states('sensor.your_temperature_sensor') | float(none) %}
-          {% set dew = states('sensor.your_dew_point_sensor') | float(none) %}
-          {% if temp is not none and dew is not none %}
-            {{ (((temp - dew) / 2.5) * 1000) | round(0) }}
-          {% else %}
-            unavailable
-          {% endif %}
-```
-Card Example
-```yaml
-type: custom:cloud-height-card
-entity: sensor.estimated_cloud_base
-temp_entity: sensor.st_00176926_air_temperature
-dew_entity: sensor.st_00176926_dew_point
-title: LOCAL SKY CONDITIONS
-max_altitude: 10000
-hours_to_show: 24
-progress_bar_order: 3
-sensors_order: 1
-analysis_order: 1
-show_celestial: true
-show_progress_bar: true
-show_sensors: true
-show_analysis: true
-
-color_8000: '#38bdf8'
-
