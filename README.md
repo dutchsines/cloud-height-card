@@ -60,3 +60,28 @@ template:
           {% else %}
             unavailable
           {% endif %}
+```
+Card Example 
+```yaml
+type: custom:cloud-height-card
+entity: sensor.estimated_cloud_base
+title: LOCAL SKY CONDITIONS
+moon_rise_entity: sensor.moon_astro_next_rise
+temp_entity: sensor.st_00176926_air_temperature
+dew_entity: sensor.st_00176926_dew_point
+moon_set_entity: sensor.moon_astro_next_set
+axis_font_size: 1rem
+badge_font_size: 1rem
+moon_phase_entity: sensor.moon_astro_phase
+bg_gradient: 'linear-gradient(180deg, #0e1726 0%, #ffffff 100%)'
+unit_system: dual_m_ft
+card_mod:
+  style: |
+    :host {
+      --chc-header-color: #ffffff;        /* Card Header Title Color */
+      --chc-axis-color: #000000;          /* Y-Axis & X-Axis Label Color */
+      --chc-sensor-label-color: #000000;  /* Temp / Dew Point Labels */
+      --chc-sensor-value-color: #000000;  /* Temp / Dew Point Numeric Values */
+      --chc-badge-text-color: #fde047;   /* Badge Text Color */
+      --chc-badge-bg: rgba(0, 0, 0, 0.8);  /* Badge Background */
+    }
